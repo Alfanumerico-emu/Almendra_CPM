@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almendra Rene Espinoza Rodríguez</title>
+    <style>
+        /* Fondo con el patrón geométrico institucional de CPM */
+        body { 
+            background-color: #1a7e3a; 
+            background-image: 
+                linear-gradient(30deg, #2baa52 12%, transparent 12.5%, transparent 87%, #2baa52 87.5%, #2baa52),
+                linear-gradient(150deg, #2baa52 12%, transparent 12.5%, transparent 87%, #2baa52 87.5%, #2baa52),
+                linear-gradient(30deg, #2baa52 12%, transparent 12.5%, transparent 87%, #2baa52 87.5%, #2baa52),
+                linear-gradient(150deg, #2baa52 12%, transparent 12.5%, transparent 87%, #2baa52 87.5%, #2baa52),
+                linear-gradient(60deg, rgba(43,170,82,0.5) 25%, transparent 25.5%, transparent 75%, rgba(43,170,82,0.5) 75%, rgba(43,170,82,0.5)),
+                linear-gradient(60deg, rgba(43,170,82,0.5) 25%, transparent 25.5%, transparent 75%, rgba(43,170,82,0.5) 75%, rgba(43,170,82,0.5));
+            background-size: 40px 70px;
+            background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+            
+            color: #ffffff; 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 25px;
+            box-sizing: border-box;
+        }
+        
+        /* Tarjeta corporativa blanca */
+        .card { 
+            background: #ffffff; 
+            text-align: center; 
+            width: 100%; 
+            max-width: 340px; 
+            padding: 35px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Contenedor circular para la foto_rene */
+        .profile-img-container {
+            width: 125px;
+            height: 125px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #4f206d; /* Borde morado institucional */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .profile-img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            object-position: center 10%; /* Ajustable con % si requiere centrarse más arriba */
+        }
+        
+        /* Nombre en el morado de la imagen */
+        h1 { 
+            font-size: 1.35rem; 
+            font-weight: 700; 
+            margin: 0 0 6px 0; 
+            color: #4f206d; 
+            line-height: 1.2;
+        }
+        
+        .job-title { 
+            color: #444444; 
+            font-size: 0.95rem; 
+            font-weight: 600;
+            margin: 0 0 2px 0;
+        }
+        
+        .location {
+            color: #888888;
+            font-size: 0.85rem;
+            margin: 0 0 25px 0;
+        }
+        
+        .section-title {
+            text-align: left;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #999999;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 5px;
+        }
+        
+        /* Botón de WhatsApp estilo franja inferior (Fondo verde, letras amarillas gruesas) */
+        .btn-whatsapp { 
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            background: #1a7e3a; 
+            color: #eef600; /* Amarillo limón */
+            text-decoration: none; 
+            padding: 15px; 
+            margin-bottom: 15px; 
+            border-radius: 12px; 
+            font-size: 0.95rem; 
+            font-weight: 700; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background 0.2s; 
+        }
+        
+        .btn-whatsapp:hover { 
+            background: #15642e; 
+        }
+        
+        /* Correo elegante en morado */
+        .email-text {
+            font-size: 0.85rem;
+            color: #4f206d;
+            font-weight: 600;
+            display: block;
+            text-decoration: none;
+            margin-top: 10px;
+            word-break: break-all;
+        }
+        
+        .email-text:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile-img-container">
+            <img src="foto_rene.jpg" alt="Almendra Rene Espinoza Rodríguez" class="profile-img">
+        </div>
+        
+        <h1>Almendra Rene Espinoza Rodríguez</h1>
+        <p class="job-title">Jefatura de Mercadotecnia</p>
+        <p class="location">Fresnillo</p>
+        
+        <div class="section-title">Contacto Directo</div>
+        
+        <a href="https://wa.me/524931373453?text=%C2%A1Hola%20Almendra!%20Acabo%20de%20escanear%20tu%20tarjeta." class="btn-whatsapp" target="_blank">
+            <span class="icon">💬</span> WhatsApp
+        </a>
+        
+        <a href="mailto:correo_de_almendra@ejemplo.com" class="email-text">correo_de_almendra@ejemplo.com</a>
+    </div>
+</body>
+</html>
