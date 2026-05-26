@@ -18,7 +18,6 @@
             background-attachment: fixed;
             
             color: #333333; 
-            /* Se aplica la nueva tipografía corporativa */
             font-family: 'Montserrat', sans-serif; 
             display: flex; 
             flex-direction: column;
@@ -63,28 +62,23 @@
             object-position: center 10%; 
         }
         
+        /* 1. Nombre en Verde Oficial */
         h1 { 
             font-size: 1.35rem; 
-            font-weight: 900; /* Peso extra grueso */
+            font-weight: 900; 
             margin: 0 0 6px 0; 
-            color: #4f206d; 
+            color: #1a7e3a; 
             line-height: 1.2;
             letter-spacing: -0.5px;
         }
         
+        /* 2. Puesto en Gris */
         .job-title { 
-            color: #1a7e3a; 
+            color: #666666; 
             font-size: 0.95rem; 
             font-weight: 800;
-            margin: 0 0 2px 0;
+            margin: 0 0 25px 0; /* Aumenté el margen inferior porque se borró la sucursal */
             text-transform: uppercase;
-        }
-        
-        .location {
-            color: #666666;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin: 0 0 25px 0;
         }
         
         .section-title {
@@ -112,37 +106,36 @@
             transition: all 0.2s; 
         }
 
-        /* SVG Iconos (Tamaño y alineación) */
         .btn svg {
             width: 20px;
             height: 20px;
             margin-right: 10px;
-            fill: currentColor; /* Esto hace que el SVG herede el color del texto automáticamente */
+            fill: currentColor; 
         }
 
-        /* WhatsApp */
+        /* 3. WhatsApp Relleno de Gris */
         .btn-whatsapp { 
-            background: #1a7e3a; 
+            background: #666666; 
             color: #ffffff; 
             text-transform: uppercase;
         }
-        .btn-whatsapp:hover { background: #15642e; }
+        .btn-whatsapp:hover { background: #4d4d4d; }
 
-        /* Teléfono */
+        /* 4. Teléfono Contorno Gris */
         .btn-phone {
             background: #ffffff;
-            color: #1a7e3a;
-            border: 2px solid #1a7e3a;
+            color: #666666;
+            border: 2px solid #666666;
         }
-        .btn-phone:hover { background: #1a7e3a; color: #ffffff; }
+        .btn-phone:hover { background: #666666; color: #ffffff; }
 
-        /* Correo */
+        /* 5. Correo Contorno Gris */
         .btn-email {
             background: #ffffff;
-            color: #4f206d;
-            border: 2px solid #4f206d;
+            color: #666666;
+            border: 2px solid #666666;
         }
-        .btn-email:hover { background: #4f206d; color: #ffffff; }
+        .btn-email:hover { background: #666666; color: #ffffff; }
         
         .ext {
             font-size: 0.8rem;
@@ -161,8 +154,8 @@
         </div>
         
         <h1>Almendra Rene Espinoza Rodríguez</h1>
+        
         <p class="job-title">Jefatura de Mercadotecnia</p>
-        <p class="location">Sucursal Fresnillo</p>
         
         <div class="section-title">Contacto Directo:</div>
         
@@ -179,7 +172,3 @@
         <a href="mailto:almendra_espinoza@cpm.coop" class="btn btn-email">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25C4.15 8.09 4 7.82 4 7.53c0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"/></svg>
             almendra_espinoza@cpm.coop
-        </a>
-    </div>
-</body>
-</html>
